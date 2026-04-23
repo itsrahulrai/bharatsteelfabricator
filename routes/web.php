@@ -42,7 +42,23 @@ Route::get('/login',function(){
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::view('/about-us', 'frontend.about-us')->name('about-us');
+Route::view('/about-us', 'frontend.about')->name('about-us');
+Route::view('/aluminium-profile-gate', 'frontend.aluminium-profile-gate')->name('aluminium-profile-gate');
+Route::view('/glass-railing', 'frontend.glass-railing')->name('glass-railing');
+Route::view('/steel-gate', 'frontend.steel-gate')->name('steel-gate');
+Route::view('/powder-coated-railing', 'frontend.powder-coated-railing')->name('powder-coated-railing');
+
+Route::view('/duplex-staircase', 'frontend.duplex-staircase')->name('duplex-staircase');
+Route::view('/iron-steel-interior-work', 'frontend.iron-steel-interior-work')->name('iron-steel-interior-work');
+
+Route::view('/contact', 'frontend.contact')->name('contact');
+Route::view('/blogs', 'frontend.blogs')->name('blogs');
+Route::view('/blogs-details', 'frontend.blogs-details')->name('blog-details');
+
+
+
+
+
 
 
 
