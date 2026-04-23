@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('frontend.layouts.layout')
+@section('title', 'Thank you - Bharat Steel Fabricator')
+@section('meta-title', '')
+@section('keywords', '')
+@section('meta-description', '')
 
-<head>
-    <title>Thank you - Bharat Steel Fabricator</title>
-    <meta name="description" content="Learn more about Bharat Steel Fabricator, a leading steel fabrication company providing high-quality steel structures and components.">
-    <?php include 'includes/headerLink.php'; ?>
-</head>
+@section('content')
 
-<body id="body" class="it-magic-cursor">
-    <?php include 'includes/header.php'; ?>
+
+
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <main>
@@ -24,7 +23,7 @@
                                     </div>
                                     <div class="it-breadcrumb-list-wrap">
                                         <div class="it-breadcrumb-list">
-                                            <span><a href="index.php">Home</a></span>
+                                            <span><a href="{{ route('home') }}">Home</a></span>
                                             <span class="dvdr">
                                                 <svg width="6" height="9" viewBox="0 0 6 9" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +32,7 @@
                                                         fill="#E03B3B" />
                                                 </svg>
                                             </span>
-                                            <span><a href="about.php">Thank-you </a></span>
+                                            <span><a href="{{ route('about-us') }}">Thank-you </a></span>
 
                                         </div>
                                     </div>
@@ -57,7 +56,7 @@
                         
                                         <h4 class="it-section-title mb-0">
                                             Your Enquiry Has Been <br>
-                                            Submitted Successfully 🎉
+                                            Submitted Successfully 
                                         </h4>
                                     </div>
                         
@@ -67,7 +66,7 @@
                                         We appreciate your trust in our services and look forward to working with you.
                                     </p>
                         
-                                    <a href="index.php" class="it-btn-orange">
+                                    <a href="{{ route('home') }}" class="it-btn-orange">
                                         Back to Home
                                     </a>
                         
@@ -78,13 +77,8 @@
                     </div>
                 </div>
                 <!-- about-area-end -->
-
-                
             </main>
-            <?php include 'includes/footer.php'; ?>
+            @include('frontend.includes.footer')
         </div>
     </div>
 </body>
-<?php include 'includes/footerLink.php'; ?>
-
-</html>

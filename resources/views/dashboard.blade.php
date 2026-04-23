@@ -105,7 +105,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: #0C6161;
+    background-color: #B1451D;
     color: #ffffff;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
@@ -124,13 +124,13 @@
 
 /* Buttons */
 .btn-gold {
-    background-color: #0C6161;
+    background-color: #B1451D;
     color: #ffffff !important;
 }
 
 .btn-outline-gold {
-    color: #0C6161;
-    border: 1px solid #0C6161;
+    color: #B1451D !important;
+    border: 1px solid #B1451D   ;
 }
 
 </style>

@@ -29,7 +29,7 @@
 
                       <!-- Categories Card -->
                       <div class="card rounded shadow-sm border-0">
-                          <div class="card-header d-flex justify-content-between align-items-center" style="background-color:#0C6161;; color:#fff;">
+                          <div class="card-header d-flex justify-content-between align-items-center" style="background-color:#B1451D; color:#fff;">
                               <h5 class="mb-0">All Categories</h5>
                               <a href="{{ route('categories.create') }}" class="btn btn-sm" style="background-color:#000; color:#fff;">+ Add New</a>
                           </div>

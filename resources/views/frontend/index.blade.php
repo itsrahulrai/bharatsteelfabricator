@@ -1,8 +1,11 @@
 @extends('frontend.layouts.layout')
 @section('title', 'Steel Fabricator Manufacturer in Delhi NCR | Bharat Steel Fabricator')
 @section('meta-title', 'Steel Fabricator Manufacturer in Delhi NCR | Bharat Steel Fabricator')
-@section('keywords', 'steel fabricator, steel manufacturer, steel gates, steel railings, steel interior solutions, custom steel fabrication, durable steel products, stylish steel designs, reliable steel services, Delhi NCR steel fabricator')
-@section('meta-description', 'Bharat Steel Fabricator is a leading manufacturer and fabricator of premium aluminium and steel products in Delhi NCR. We offer custom solutions for gates, railings, and interior steel work.')
+@section('keywords', 'steel fabricator, steel manufacturer, steel gates, steel railings, steel interior solutions,
+    custom steel fabrication, durable steel products, stylish steel designs, reliable steel services, Delhi NCR steel
+    fabricator')
+@section('meta-description', 'Bharat Steel Fabricator is a leading manufacturer and fabricator of premium aluminium and
+    steel products in Delhi NCR. We offer custom solutions for gates, railings, and interior steel work.')
 
 @section('content')
 
@@ -19,9 +22,10 @@
                                 <div class="swiper-slide">
                                     <div class="it-slider-overlay">
                                         <div class="it-slider-shape-2">
-                                            <img src="{{asset('assets/img/shape/slider-2-1.png')}}" alt="">
+                                            <img src="{{ asset('assets/img/shape/slider-2-1.png') }}" alt="">
                                         </div>
-                                        <div class="it-slider-bg" data-background="{{asset('assets/img/custom/slider1.jpg')}}"></div>
+                                        <div class="it-slider-bg"
+                                            data-background="{{ asset('assets/img/custom/slider1.jpg') }}"></div>
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-xxl-8 col-xl-7 col-lg-8">
@@ -44,9 +48,10 @@
                                 <div class="swiper-slide">
                                     <div class="it-slider-overlay">
                                         <div class="it-slider-shape-2">
-                                            <img src="{{asset('assets/img/shape/slider-2-1.png')}}" alt="">
+                                            <img src="{{ asset('assets/img/shape/slider-2-1.png') }}" alt="">
                                         </div>
-                                        <div class="it-slider-bg" data-background="{{asset('assets/img/custom/slider2.jpg')}}"></div>
+                                        <div class="it-slider-bg"
+                                            data-background="{{ asset('assets/img/custom/slider2.jpg') }}"></div>
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-xxl-8 col-xl-7 col-lg-8">
@@ -144,7 +149,8 @@
 
                 <!-- about-area-start -->
                 <div class="it-about-area it-about-style-2 it-about-style-3 p-relative pt-130 pb-130">
-                    <img class="it-about-shape-1 d-none d-lg-block" src="{{asset('assets/img/shape/about-5-1.png')}}" alt="">
+                    <img class="it-about-shape-1 d-none d-lg-block" src="{{ asset('assets/img/shape/about-5-1.png') }}"
+                        alt="">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-7 col-lg-7">
@@ -200,7 +206,8 @@
                                     <div class="it-about-btn d-flex align-items-center wow itfadeUp"
                                         data-wow-duration=".9s" data-wow-delay=".7s">
 
-                                        <a href="{{ route('about-us') }}" class="it-btn-orange d-none d-md-inline-flex mr-30">
+                                        <a href="{{ route('about-us') }}"
+                                            class="it-btn-orange d-none d-md-inline-flex mr-30">
                                             <span>
                                                 <span class="text-1">Explore Our Work</span>
                                                 <span class="text-2">Explore Our Work</span>
@@ -229,9 +236,10 @@
                                 <div class="it-about-thumb-wrap it-img-anim-wrap p-relative wow img-anim-top"
                                     data-wow-duration="1.5s" data-wow-delay="0.1">
                                     <div class="it-about-thumb mb-35 it-img-anim"
-                                        data-displacement="{{asset('assets/img/webgl/pattern-1.jpg')}}" data-intensity="0.6"
-                                        data-speedin="1" data-speedout="1">
-                                        <img src="{{asset('assets/img/custom/about-1-1.webp')}}" alt="Bharat Steel Fabricator Work">
+                                        data-displacement="{{ asset('assets/img/webgl/pattern-1.jpg') }}"
+                                        data-intensity="0.6" data-speedin="1" data-speedout="1">
+                                        <img src="{{ asset('assets/img/custom/about-1-1.webp') }}"
+                                            alt="Bharat Steel Fabricator Work">
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +251,7 @@
 
                 <!-- service-area-start -->
                 <div class="it-service-2-area gray-bg p-relative z-index-1 pt-125 pb-130">
-                    <img class="it-service-shape-1" src="{{asset('assets/img/shape/service-1-1.png')}}" alt="">
+                    <img class="it-service-shape-1" src="{{ asset('assets/img/shape/service-1-1.png') }}" alt="">
                     <div class="container">
 
                         <div class="row">
@@ -264,7 +272,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="it-service-2-item mb-35">
                                     <div class="it-service-2-thumb">
-                                        <img class="w-100" src="{{asset('assets/img/custom/al.webp')}}" alt="">
+                                        <img class="w-100" src="{{ asset('assets/img/custom/al.webp') }}"
+                                            alt="">
                                     </div>
                                     <div class="it-service-2-content">
                                         <h4 class="it-service-2-title">
@@ -282,7 +291,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="it-service-2-item mb-35">
                                     <div class="it-service-2-thumb">
-                                        <img class="w-100" src="{{asset('assets/img/custom/glass.webp')}}" alt="">
+                                        <img class="w-100" src="{{ asset('assets/img/custom/glass.webp') }}"
+                                            alt="">
                                     </div>
                                     <div class="it-service-2-content">
                                         <h4 class="it-service-2-title">
@@ -300,7 +310,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="it-service-2-item mb-35">
                                     <div class="it-service-2-thumb">
-                                        <img class="w-100" src="{{asset('assets/img/custom/steel.webp')}}" alt="">
+                                        <img class="w-100" src="{{ asset('assets/img/custom/steel.webp') }}"
+                                            alt="">
                                     </div>
                                     <div class="it-service-2-content">
                                         <h4 class="it-service-2-title">
@@ -318,7 +329,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="it-service-2-item mb-35">
                                     <div class="it-service-2-thumb">
-                                        <img class="w-100" src="{{asset('assets/img/custom/powder.webp')}}" alt="">
+                                        <img class="w-100" src="{{ asset('assets/img/custom/powder.webp') }}"
+                                            alt="">
                                     </div>
                                     <div class="it-service-2-content">
                                         <h4 class="it-service-2-title">
@@ -336,7 +348,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="it-service-2-item mb-35">
                                     <div class="it-service-2-thumb">
-                                        <img class="w-100" src="{{asset('assets/img/custom/duplex.webp')}}" alt="">
+                                        <img class="w-100" src="{{ asset('assets/img/custom/duplex.webp') }}"
+                                            alt="">
                                     </div>
                                     <div class="it-service-2-content">
                                         <h4 class="it-service-2-title">
@@ -354,7 +367,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="it-service-2-item mb-35">
                                     <div class="it-service-2-thumb">
-                                        <img class="w-100" src="{{asset('assets/img/custom/interior.webp')}}" alt="">
+                                        <img class="w-100" src="{{ asset('assets/img/custom/interior.webp') }}"
+                                            alt="">
                                     </div>
                                     <div class="it-service-2-content">
                                         <h4 class="it-service-2-title">
@@ -492,20 +506,21 @@
                     </div>
 
                     <div class="it-choose-3-bg img-zoom-2">
-                        <img src="{{asset('assets/img/custom/bg-5-1.webp')}}" alt="Bharat Steel Fabricator Work">
+                        <img src="{{ asset('assets/img/custom/bg-5-1.webp') }}" alt="Bharat Steel Fabricator Work">
                     </div>
                 </div>
                 <!-- choose-area-end -->
 
                 <!-- testimonial-area-start -->
                 <div class="it-testimonial-2-area z-index-1 black-bg pt-130 pb-130">
-                    <img class="it-service-shape-1" src="{{asset('assets/img/shape/testimonial-3-1.png')}}" alt="">
+                    <img class="it-service-shape-1" src="{{ asset('assets/img/shape/testimonial-3-1.png') }}"
+                        alt="">
                     <div class="container">
                         <div class="row align-items-end">
 
                             <div class="col-xl-4 col-lg-5 order-1 order-lg-0">
                                 <div class="it-testimonial-2-thumb">
-                                    <img src="{{asset('assets/img/custom/testimonial-3-1.webp')}}"
+                                    <img src="{{ asset('assets/img/custom/testimonial-3-1.webp') }}"
                                         alt="Bharat Steel Fabricator Clients">
                                 </div>
                             </div>
@@ -618,8 +633,9 @@
                 <!-- testimonial-area-end -->
 
                 <!-- cta-area-start -->
-                <div class="it-cta-area it-cta-overlay" data-background="{{asset('assets/img/custom/slider1.jpg')}}">
-                    <img class="it-cta-shape-1 d-none d-xxl-block" src="{{asset('assets/img/shape/cta.png')}}" alt="">
+                <div class="it-cta-area it-cta-overlay" data-background="{{ asset('assets/img/custom/slider1.jpg') }}">
+                    <img class="it-cta-shape-1 d-none d-xxl-block" src="{{ asset('assets/img/shape/cta.png') }}"
+                        alt="">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-6 col-lg-8 col-md-7">
@@ -682,8 +698,10 @@
                                 <div class="it-blog-item gray-bg mb-30">
                                     <div class="it-blog-thumb w-100">
                                         <a href="blog-details.html">
-                                            <img class="w-100" src="{{asset('assets/img/blog/blog-5-1.jpg')}}" alt="">
-                                            <img class="w-100" src="{{asset('assets/img/blog/blog-5-1.jpg')}}" alt="">
+                                            <img class="w-100" src="{{ asset('assets/img/blog/blog-5-1.jpg') }}"
+                                                alt="">
+                                            <img class="w-100" src="{{ asset('assets/img/blog/blog-5-1.jpg') }}"
+                                                alt="">
                                         </a>
                                     </div>
                                     <div class="it-blog-content">
@@ -707,7 +725,7 @@
                                 </div>
                             </div>
 
-                        
+
                         </div>
 
                         <div class="row">
@@ -810,42 +828,46 @@
                                     <h4 class="it-contact-form-title mb-10">Get in touch!</h4>
                                     <p>With a passion for precision and a commitment to quality we have been <br>
                                         empowering industries and driving progress. We specialize</p>
-                                    <form action="#">
+                                    <form id="contactForm" method="POST" action="{{ route('contact.submit') }}">
+                                        @csrf
                                         <div class="it-contact-input-wrap">
                                             <div class="row gx-30">
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
-                                                        <input type="text" placeholder="Full Name">
+                                                        <input type="text" name='name' id='name'
+                                                            placeholder="Full Name" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
-                                                        <input type="email" placeholder="Email">
+                                                        <input type="email" name='email' id='email'
+                                                            placeholder="Email">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
-                                                        <input type="text" placeholder="Phone">
+                                                        <input type="text" name='phone' id='phone'
+                                                            placeholder="Phone" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
                                                         <div class="postbox__select">
-                                                            <select>
-                                                                <option>Subject*</option>
-                                                                <option>Aluminium profile Gate</option>
-                                                                <option>Glass Railing</option>
-                                                                <option>Steel Gate</option>
-                                                                <option>Powder Coated Railing</option>
-                                                                <option>Duplex Staircase</option>
-                                                                <option>Iron and Steel Interior Work</option>
+                                                            <select name="subject" id="subject">
+                                                                <option value="">Subject*</option>
+                                                                <option value="aluminium-profile-gate">Aluminium profile Gate</option>
+                                                                <option value="glass-railing">Glass Railing</option>
+                                                                <option value="steel-gate">Steel Gate</option>
+                                                                <option value="powder-coated-railing">Powder Coated Railing</option>
+                                                                <option value="duplex-staircase">Duplex Staircase</option>
+                                                                <option value="iron-steel-interior">Iron and Steel Interior Work</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 mb-60">
                                                     <div class="it-contact-input-box">
-                                                        <textarea placeholder="Project Description*"></textarea>
+                                                        <textarea name='description' id='description' placeholder="Project Description*"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -874,7 +896,7 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <img class="it-contact-shape-1" src="{{asset('assets/img/shape/contact-1-1.png')}}"
+                                    <img class="it-contact-shape-1" src="{{ asset('assets/img/shape/contact-1-1.png') }}"
                                         alt="">
                                 </div>
                             </div>
@@ -883,10 +905,10 @@
                 </div>
                 <!-- contact-area-end -->
             </main>
-             @include('frontend.includes.footer')
+            @include('frontend.includes.footer')
 
         </div>
     </div>
-    
+
 
 @endsection

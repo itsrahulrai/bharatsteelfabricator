@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login | Prof. Dr. Sanjeev Kalra | Ayurveda NeuroPsychiatrist &amp; Mental Wellness Expert</title>
+    <title>Login | Steel Fabricator Manufacturer in Delhi NCR | Bharat Steel Fabricator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap 5 CSS -->
@@ -12,7 +12,7 @@
     <!-- Google Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="{{ static_asset('front-assets/assets/img/home1/favicon.png') }}" type="image/png" sizes="20x20">
+    <link rel="icon" href="{{ asset('front-assets/assets/img/home1/favicon.png') }}" type="image/png" sizes="20x20">
 
     <style>
         body {
@@ -97,7 +97,7 @@
         }
 
         .login-btn {
-            background: #0C6161;
+            background: #B1451D;
             border: none;
             border-radius: 8px;
             font-weight: 600;
@@ -108,7 +108,7 @@
         }
 
         .login-btn:hover {
-            background: #0C6161;
+            background: #171C1F;
             color: #fff;
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(181, 137, 94, 0.4);
@@ -166,7 +166,7 @@
     <div class="login-card">
         <!-- Logo -->
         <div class="logo-wrapper">
-            <img src="{{static_asset('assets/images/logo.jpg')}}" alt="Logo" style="width: 250px; height: auto;" class="login-logo">
+            <img src="{{asset('assets/img/custom/logo.jpeg')}}" alt="Logo" style="width: 150px; height: auto;" class="login-logo">
                 
 
         </div>

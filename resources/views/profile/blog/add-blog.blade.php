@@ -39,7 +39,7 @@
 
                     <!-- Blog Form -->
                     <div class="card rounded mt-3 border" style="border-color:#000;">
-                        <div class="card-header" style="background-color:#0C6161; color:#fff;">
+                        <div class="card-header" style="background-color:#B1451D; color:#fff;">
                             <h5 class="mb-0">{{ isset($blog) ? 'Edit Blog' : 'Add New Blog' }}</h5>
                         </div>
                         <div class="card-body">
@@ -82,7 +82,7 @@
                                     <div class="form-text">Upload featured image (e.g., 1200x600px).</div>
                                     @if (isset($blog) && $blog->image)
                                         <div class="mt-2">
-                                            <img src="{{ static_asset($blog->image) }}" alt="Blog Image" class="img-thumbnail" width="120">
+                                            <img src="{{ asset($blog->image) }}" alt="Blog Image" class="img-thumbnail" width="120">
                                         </div>
                                     @endif
                                 </div>
@@ -158,7 +158,7 @@
 
                             <!-- Submit Button -->
                             <div class="text-end mt-4">
-                                <button type="submit" class="btn" style="background-color:#0C6161;; color:#fff;">{{ isset($blog) ? 'Update' : 'Submit' }}</button>
+                                <button type="submit" class="btn" style="background-color:#B1451D; color:#fff;">{{ isset($blog) ? 'Update' : 'Submit' }}</button>
                             </div>
                             </form>
                         </div>

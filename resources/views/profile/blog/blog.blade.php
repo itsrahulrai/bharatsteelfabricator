@@ -28,13 +28,13 @@
                     </div>
 
                     <div class="card rounded mt-3">
-                        <div class="card-header d-flex justify-content-between" style="background-color:#0C6161;; color:white;">
+                        <div class="card-header d-flex justify-content-between" style="background-color:#B1451D; color:white;">
                             <h5 class="mb-0">All Blogs</h5>
                             <a href="{{ route('admin.blogs.create') }}" class="btn btn-sm" style="background-color:#000; color:white;">+ Add New</a>
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered table-striped">
-                                <thead style="background-color:#0C6161;; color:white;">
+                                <thead style="background-color:#B1451D; color:white;">
                                     <tr>
                                         <th>#</th>
                                         <th>Title</th>

@@ -106,7 +106,7 @@
 
     /* Hover effect */
     .sidebar-link:hover {
-        background-color: #0C6161;
+        background-color:#B1451D;
         color: #ffffff !important;
         transform: translateX(5px);
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -114,7 +114,7 @@
 
     /* Active link */
     .sidebar-link.active-link {
-        background-color: #0C6161;
+        background-color: #B1451D;
         color: #ffffff !important;
         font-weight: 600;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -133,7 +133,7 @@
 
     /* Logout button */
     .logout-btn {
-        background-color: #0C6161;
+        background-color: #B1451D;
         color: #fff !important;
         border-radius: 10px;
         padding: 10px;

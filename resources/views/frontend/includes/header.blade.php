@@ -12,10 +12,10 @@
 </div>
 
 <!-- back-to-top-start  -->
-<button class="scroll-top scroll-to-target" data-target="html">
+{{-- <button class="scroll-top scroll-to-target" data-target="html">
     <i class="far fa-angle-double-up"></i>
-</button>
-<!-- back-to-top-end  -->
+</button> --}}
+<!-- *-top-end  -->
 
 <!-- it-offcanvus-area-start -->
 <div class="it-offcanvas-area">
@@ -157,7 +157,7 @@ https://www.facebook.com/people/Bharat-Steel-Fabricator/61588490130025/">
                                         </li>
 
                                         <li>
-                                            <a href="#">Blogs</a>
+                                            <a href="{{ route('blogs') }}">Blogs</a>
                                         </li>
                                         <li>
                                             <a href="{{ route('contact') }}">Contact</a>

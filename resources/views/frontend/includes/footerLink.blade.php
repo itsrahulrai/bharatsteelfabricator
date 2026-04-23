@@ -32,3 +32,107 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <script src="{{ asset('assets/js/slider.js') }}"></script>
    <script src="{{ asset('assets/js/wow.js') }}"></script>
    <script src="{{ asset('assets/js/main.js') }}"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const phone = document.getElementById("phone");
+            const desc = document.getElementById("description");
+            const form = document.getElementById("contactForm");
+
+            function containsScript(val) {
+                return /<\s*script/gi.test(val);
+            }
+
+            function showError(input, message) {
+                let box = input.closest(".it-contact-input-box");
+
+                // remove old error
+                let old = box.querySelector(".live-error");
+                if (old) old.remove();
+
+                // add new error
+                let error = document.createElement("small");
+                error.className = "live-error";
+                error.style.color = "red";
+                error.style.fontSize = "12px";
+                error.innerText = message;
+
+                box.appendChild(error);
+
+                input.style.border = "1px solid red";
+            }
+
+            function clearError(input) {
+                let box = input.closest(".it-contact-input-box");
+                let old = box.querySelector(".live-error");
+                if (old) old.remove();
+
+                input.style.border = "";
+            }
+
+            // NAME
+            name.addEventListener("input", function() {
+                let v = this.value;
+
+                if (containsScript(v)) {
+                    showError(this, "Script not allowed");
+                } else if (!/^[A-Za-z\s]*$/.test(v)) {
+                    showError(this, "Only letters allowed");
+                } else {
+                    clearError(this);
+                }
+            });
+
+            // EMAIL
+            email.addEventListener("input", function() {
+                let v = this.value;
+
+                if (containsScript(v)) {
+                    showError(this, "Script not allowed");
+                } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
+                    showError(this, "Invalid email");
+                } else {
+                    clearError(this);
+                }
+            });
+
+            // PHONE
+            phone.addEventListener("input", function() {
+                let v = this.value.replace(/\D/g, "");
+                this.value = v;
+
+                if (containsScript(v)) {
+                    showError(this, "Script not allowed");
+                } else if (v.length > 10) {
+                    showError(this, "Max 10 digits");
+                } else if (v.length < 10) {
+                    showError(this, "Enter 10 digit number");
+                } else {
+                    clearError(this);
+                }
+            });
+
+            // DESCRIPTION
+            desc.addEventListener("input", function() {
+                let v = this.value;
+
+                if (containsScript(v)) {
+                    showError(this, "Script not allowed");
+                } else {
+                    clearError(this);
+                }
+            });
+
+            // SUBMIT BLOCK
+            form.addEventListener("submit", function(e) {
+                if (document.querySelectorAll(".live-error").length > 0) {
+                    e.preventDefault();
+                }
+            });
+
+        });
+    </script>
+   @stack('scripts')

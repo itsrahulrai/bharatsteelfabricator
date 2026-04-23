@@ -2,7 +2,9 @@
 @section('title', 'Contact Bharat Steel Fabricator | Steel Fabricator in Delhi NCR')
 @section('meta-title', '')
 @section('keywords', '')
-@section('meta-description', 'Reach Bharat Steel Fabricator in Delhi NCR for custom steel gates, railings & interior solutions. Call or email us today for expert assistance!')
+@section('meta-description',
+    'Reach Bharat Steel Fabricator in Delhi NCR for custom steel gates, railings & interior
+    solutions. Call or email us today for expert assistance!')
 
 @section('content')
 
@@ -20,7 +22,8 @@
                             <div class="col-xl-8 col-lg-8 col-md-7">
                                 <div class="it-breadcrumb-content">
                                     <div class="it-breadcrumb-title-box">
-                                        <h3 class="it-breadcrumb-title it-split-text it-split-in-right">Contact Information</h3>
+                                        <h3 class="it-breadcrumb-title it-split-text it-split-in-right">Contact Information
+                                        </h3>
                                     </div>
                                     <div class="it-breadcrumb-list-wrap">
                                         <div class="it-breadcrumb-list">
@@ -85,7 +88,8 @@
                                             <div class="it-contact-list">
                                                 <span>Email</span>
                                                 <p>Send your mail for general enquiries.</p>
-                                                <a class="border-line-orange" href="mailto:hasan727223@gmail.com">hasan727223@gmail.com</a>
+                                                <a class="border-line-orange"
+                                                    href="mailto:hasan727223@gmail.com">hasan727223@gmail.com</a>
                                             </div>
                                         </div>
                                         <div class="it-contact-list-box d-flex align-items-center">
@@ -112,7 +116,8 @@
                                             <div class="it-contact-list">
                                                 <span>Our Location</span>
                                                 <p>View location for staying guests.</p>
-                                                <a class="border-line-orange">1170 Utsav Vihar Kanjhawala road Rohini Sector 39 Delhi 110081</a>
+                                                <a class="border-line-orange">1170 Utsav Vihar Kanjhawala road Rohini Sector
+                                                    39 Delhi 110081</a>
                                             </div>
                                         </div>
                                     </div>
@@ -123,42 +128,46 @@
                                     <h4 class="it-contact-form-title mb-10">Get in touch!</h4>
                                     <p>With a passion for precision and a commitment to quality we have been <br>
                                         empowering industries and driving progress. We specialize</p>
-                                    <form action="#">
+                                    <form id="contactForm" method="POST" action="{{ route('contact.submit') }}">
+                                        @csrf
                                         <div class="it-contact-input-wrap">
                                             <div class="row gx-30">
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
-                                                        <input type="text" placeholder="Full Name">
+                                                        <input type="text" name='name' id="name"
+                                                            placeholder="Full Name" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
-                                                        <input type="email" placeholder="Email">
+                                                        <input type="email" name='email' id="email"
+                                                            placeholder="Email">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
-                                                        <input type="text" placeholder="Phone">
+                                                        <input type="text" name='phone' id="phone"
+                                                            placeholder="Phone" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 mb-35">
                                                     <div class="it-contact-input-box">
                                                         <div class="postbox__select">
-                                                            <select>
-                                                                <option>Subject*</option>
-                                                                <option>Aluminium profile Gate</option>
-                                                                <option>Glass Railing</option>
-                                                                <option>Steel Gate</option>
-                                                                <option>Powder Coated Railing</option>
-                                                                <option>Duplex Staircase</option>
-                                                                <option>Iron and Steel Interior Work</option>
+                                                            <select name="subject" id="subject">
+                                                                <option value="">Subject*</option>
+                                                                <option value="aluminium-profile-gate">Aluminium profileGate</option>
+                                                                <option value="glass-railing">Glass Railing</option>
+                                                                <option value="steel-gate">Steel Gate</option>
+                                                                <option value="powder-coated-railing">Powder Coated Railing </option>
+                                                                <option value="duplex-staircase">Duplex Staircase</option>
+                                                                <option value="iron-steel-interior">Iron and Steel Interior Work</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 mb-60">
                                                     <div class="it-contact-input-box">
-                                                        <textarea placeholder="Project Description*"></textarea>
+                                                        <textarea name='description' id="description" placeholder="Project Description*"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -169,14 +178,14 @@
                                                         <span class="text-2">Submit now</span>
                                                     </span>
                                                     <i>
-                                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="12" height="13" viewBox="0 0 12 13"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z"
                                                                 fill="white" />
                                                         </svg>
-                                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="12" height="13" viewBox="0 0 12 13"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z"
                                                                 fill="white" />
@@ -187,7 +196,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <img class="it-contact-shape-1" src="{{ asset('assets/img/shape/contact-1-1.png') }}" alt="">
+                                    <img class="it-contact-shape-1" src="{{ asset('assets/img/shape/contact-1-1.png') }}"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -201,7 +211,10 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="it-map-wrap">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.883330499431!2d77.0463729!3d28.723032500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d077c8bf88401%3A0x936758e8bf063fd2!2sBharat%20Steel%20Fabricator!5e0!3m2!1sen!2sin!4v1773400166783!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.883330499431!2d77.0463729!3d28.723032500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d077c8bf88401%3A0x936758e8bf063fd2!2sBharat%20Steel%20Fabricator!5e0!3m2!1sen!2sin!4v1773400166783!5m2!1sen!2sin"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -209,10 +222,7 @@
                 </div>
                 <!-- map-area-end -->
             </main>
-           @include('frontend.includes.footer')
+            @include('frontend.includes.footer')
         </div>
     </div>
-
-    
-
 @endsection

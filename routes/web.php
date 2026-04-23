@@ -78,10 +78,9 @@ Route::view('/thank-you', 'frontend.thank-you')->name('thankyou');
 Route::post('/appointment-submit',[HomeController::class, 'appointmentSubmit'])->name('appointment.submit');
 
 
-Route::get('/gallery', [HomeController::class, 'Gallery'])->name('galleries');
-Route::post('/gallery', [HomeController::class, 'Gallery'])->name('gallery');
-Route::post('/contact/send', [HomeController::class, 'sendContact'])->name('contact.send');
-Route::post('/send-enquiry', [HomeController::class, 'sendEnquiry'])->name('send.enquiry');
+// Route::get('/gallery', [HomeController::class, 'Gallery'])->name('galleries');
+// Route::post('/gallery', [HomeController::class, 'Gallery'])->name('gallery');
+
 
 Route::get('/blogs', [HomeController::class, 'blogs'])->name('blogs');
 Route::get('/blog/{slug}', [HomeController::class, 'show'])->name('blog.details');

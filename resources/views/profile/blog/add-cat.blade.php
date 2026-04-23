@@ -16,7 +16,7 @@
                                 role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="d-flex">
                                     <div class="toast-body">
-                                        ✅ {{ session('success') }}
+                                         {{ session('success') }}
                                     </div>
                                     <button type="button" class="btn-close btn-close-white me-2 m-auto"
                                         data-bs-dismiss="toast" aria-label="Close"></button>
@@ -47,7 +47,7 @@
 
                     <!-- Form Card -->
                     <div class="card rounded shadow-sm border-0">
-                        <div class="card-header" style="background-color:#0C6161; color:#fff;">
+                        <div class="card-header" style="background-color:#B1451D; color:#fff;">
                             <h5 class="mb-0">{{ isset($category) ? 'Edit Category' : 'Add New Category' }}</h5>
                         </div>
                         <div class="card-body">
@@ -91,7 +91,7 @@
                                 </div>
 
                                 <div class="text-end mt-4">
-                                    <button type="submit" class="btn btn-lg" style="background-color:#0C6161;; color:#fff;">
+                                    <button type="submit" class="btn btn-lg" style="background-color:#B1451D; color:#fff;">
                                         {{ isset($category) ? 'Update' : 'Submit' }}
                                     </button>
                                 </div>
